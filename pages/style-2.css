@@ -41,3 +41,7 @@ footer {
     padding: 10px 0;
     background-color: #f4f4f4;
 }
+
+.left:target ~ .carousel{
+    margin-left: 100%;
+}
