@@ -1,0 +1,32 @@
+#menu {
+    position: fixed; /* Makes the menu stay in place while scrolling */
+    top: 0; /* Aligns the menu at the top */
+    left: 2%; /* Aligns the menu to the left */
+    width: 5%; /* Adjust as needed */
+    padding: 3px; /* Adds some space inside the container */
+    box-sizing: border-box; /* Ensures padding does not add to the width */
+}
+
+#menu a {
+    display: block; /* Makes each link fill the container */
+    padding: 10px; /* Adds some space around the link text */
+    margin-bottom: 2%; /* Adds space between the buttons */
+    background-color: white; /* Optional: sets the background color of the button */
+    color: black; /* Text color */
+    text-decoration: none; /* Removes underline from links */
+    border: 1px dashed black; /* Adds the thin black border */
+    box-sizing: border-box; /* Ensures padding doesn't increase the size */
+    font-size: small;
+}
+
+#blog a {
+    text-decoration: none;
+    color: rgb(36, 77, 213);
+}
+
+body {
+    text-align: center;
+    display: block;
+    font-family: Menlo, Monaco, monospace
+}
+
