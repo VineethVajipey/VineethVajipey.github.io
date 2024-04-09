@@ -1,6 +1,6 @@
 #menu {
     position: fixed; /* Makes the menu stay in place while scrolling */
-    top: 0; /* Aligns the menu at the top */
+    top: 2%; /* Aligns the menu at the top */
     left: 2%; /* Aligns the menu to the left */
     width: 5%; /* Adjust as needed */
     padding: 3px; /* Adds some space inside the container */
@@ -8,6 +8,7 @@
 }
 
 #menu a {
+    text-align: center;
     display: block; /* Makes each link fill the container */
     padding: 10px; /* Adds some space around the link text */
     margin-bottom: 2%; /* Adds space between the buttons */
@@ -19,14 +20,23 @@
     font-size: small;
 }
 
+#blog h2 {
+    padding: 1%;
+}
+
 #blog a {
     text-decoration: none;
     color: rgb(36, 77, 213);
 }
 
 body {
-    text-align: center;
+    text-align: left;
     display: block;
-    font-family: Menlo, Monaco, monospace
+    font-family: Menlo, Monaco, monospace;
+    margin: 0 20%;
 }
 
+h1 {
+    margin: 0 10%;
+    text-align: center;
+}
