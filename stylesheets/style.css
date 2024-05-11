@@ -12,7 +12,7 @@
     display: block; /* Makes each link fill the container */
     padding: 10px; /* Adds some space around the link text */
     margin-bottom: 2%; /* Adds space between the buttons */
-    background-color: white; /* Optional: sets the background color of the button */
+    background-color: rgb(249, 247, 244); /* Optional: sets the background color of the button */
     color: black; /* Text color */
     text-decoration: none; /* Removes underline from links */
     border: 1px dashed black; /* Adds the thin black border */
@@ -34,6 +34,7 @@ body {
     display: block;
     font-family: Menlo, Monaco, monospace;
     margin: 0 20%;
+    background-color:rgb(243, 240, 236);
 }
 
 h1 {
