@@ -29,12 +29,17 @@
     color: rgb(36, 77, 213);
 }
 
+#title_card h3 {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: rgb(7, 7, 7);
+}
+
 body {
     text-align: left;
     display: block;
     font-family: Menlo, Monaco, monospace;
     margin: 0 20%;
-    background-color:rgb(243, 240, 236);
+    background-color:rgb(246, 244, 244);
 }
 
 h1 {
