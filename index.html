@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>🌊</title>
+    <title>vv</title>
     <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
 </head>
 <body>
@@ -14,11 +14,23 @@
 
     <center>
       <div id="title_card" style="margin-top: 200px;"">
-        <img src="images/flow.JPG" alt="along the flow" width="500" >
+        <img id="slideshow" src="images/flow.JPG" alt="along the flow" width="500">
         <br>
         <h3>Vineeth Vajipey</h3>
       </div>
     </center>
+
+    <script>
+      const imageElement = document.getElementById('slideshow');
+      const images = ['images/flow.JPG', 'images/goons.JPG', 'images/gothic.JPG', 'images/brozas.JPG', ];
+    
+      let currentIndex = 0;
+      function changeImage() {
+          currentIndex = (currentIndex + 1) % images.length;
+          imageElement.src = images[currentIndex];
+      }
+      setInterval(changeImage, 2000);
+    </script>
 
 </body>
 </html>
