@@ -40,9 +40,42 @@ body {
     font-family: Menlo, Monaco, monospace;
     margin: 0 20%;
     background-color:rgb(246, 244, 244);
+    padding-bottom: 200px;
 }
 
 h1 {
     margin: 0 10%;
     text-align: center;
 }
+
+.ascii-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(246, 244, 244);
+    padding: 20px 0;
+    text-align: left; /* Changed to left alignment for better pattern control */
+    font-family: Menlo, Monaco, monospace;
+    overflow: hidden;
+    z-index: 100;
+    white-space: nowrap; /* Prevents wrapping */
+}
+
+.ascii-footer pre {
+    margin: 0;
+    padding: 0;
+    white-space: pre;
+    line-height: 1.2;
+    font-size: 12px;
+    color: rgb(40, 40, 40);
+    display: block; /* Changed to block */
+    padding-left: 20px; /* Add some padding from the left edge */
+    animation: scrollPattern 80s linear infinite; /* Slow scrolling animation */
+}
+
+@keyframes scrollPattern {
+    0% { transform: translateX(0%); }
+    100% { transform: translateX(-50%); }
+}
+
