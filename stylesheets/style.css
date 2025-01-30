@@ -1,22 +1,21 @@
 #menu {
-    position: fixed; /* Makes the menu stay in place while scrolling */
-    top: 2%; /* Aligns the menu at the top */
-    left: 2%; /* Aligns the menu to the left */
-    width: 5%; /* Adjust as needed */
-    padding: 3px; /* Adds some space inside the container */
-    box-sizing: border-box; /* Ensures padding does not add to the width */
+    position: fixed;
+    top: 2%;
+    left: 2%;
+    width: 5%;
+    padding: 3px;
+    box-sizing: border-box;
 }
 
 #menu a {
     text-align: center;
-    display: block; /* Makes each link fill the container */
-    padding: 10px; /* Adds some space around the link text */
-    margin-bottom: 2%; /* Adds space between the buttons */
-    background-color: rgb(249, 247, 244); /* Optional: sets the background color of the button */
-    color: black; /* Text color */
-    text-decoration: none; /* Removes underline from links */
-    border: 1px dashed black; /* Adds the thin black border */
-    box-sizing: border-box; /* Ensures padding doesn't increase the size */
+    display: block; 
+    padding: 10px; 
+    margin-bottom: 2%;
+    background-color: rgb(249, 247, 244);
+    text-decoration: none;
+    border: 1px dashed black;
+    box-sizing: border-box;
     font-size: small;
 }
 
@@ -55,27 +54,77 @@ h1 {
     width: 100%;
     background-color: rgb(246, 244, 244);
     padding: 20px 0;
-    text-align: left; /* Changed to left alignment for better pattern control */
     font-family: Menlo, Monaco, monospace;
     overflow: hidden;
     z-index: 100;
-    white-space: nowrap; /* Prevents wrapping */
 }
 
-.ascii-footer pre {
+.ascii-footer-scroll {
+    display: inline-flex;
+    animation: scrollPattern 80s linear infinite;
+}
+
+.ascii-footer-scroll pre {
     margin: 0;
-    padding: 0;
+    padding-right: 50px; 
     white-space: pre;
     line-height: 1.2;
     font-size: 12px;
-    color: rgb(40, 40, 40);
-    display: block; /* Changed to block */
-    padding-left: 20px; /* Add some padding from the left edge */
-    animation: scrollPattern 80s linear infinite; /* Slow scrolling animation */
 }
 
+.flower1 { color: #fb7185; }  /* Rose pink */
+.flower2 { color: #fcd34d; }  /* Yellow */
+.flower3 { color: #c084fc; }  /* Purple */
+.stem1 { color: #16a34a; }    /* Dark green */
+.stem2 { color: #22c55e; }    /* Medium green */
+.stem3 { color: #4ade80; }    /* Light green */
+.grass { color: #15803d; }    /* Deep green for base */
+
 @keyframes scrollPattern {
-    0% { transform: translateX(0%); }
+    0% { transform: translateX(0); }
     100% { transform: translateX(-50%); }
 }
 
+.main-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.sidebar {
+    width: 200px;
+    background: #fafafa;
+    padding: 180px 20px;
+    border-left: 1px solid #eee;
+    height: 100vh;
+    position: fixed;
+    right: 0;
+    top: 0;
+}
+
+.project-link {
+    display: block;
+    padding: 12px 15px;
+    margin: 10px 0;
+    text-decoration: none;
+    color: #333;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    background: white;
+}
+
+.project-link:hover {
+    transform: translateX(-5px);
+    border-color: #ddd;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.05);
+}
+
+.project-title {
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.project-desc {
+    font-size: 0.85em;
+    color: #666;
+}
